@@ -62,7 +62,7 @@ ul{
 }
 
 .right img{
-    height: 500px;
+    height: 50vw;
 }
 
 h2{
@@ -106,7 +106,7 @@ p{
 }
 
 .right2 img{
-    height: 500px;
+    height: 50vw;
 }
 
 .violetText{
@@ -132,17 +132,107 @@ footer p{
 }
 
 /* Responsive */
-@media (max-width: 650px) {
-    .right img {
-      display: none; 
+@media (max-width: 600px) {
+    /* nav */
+    .section0 nav{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        z-index: 99;
+        background: black;
+        right: -300px;
+        padding: 4rem;
+        gap: 2rem;
+        justify-content: start;
+        transition: 0.3s ease-in-out;
     }
-    .right2 img {
-        display: none; 
-      }
-    .menu li{
-        display: none;
+
+    .section0 .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
     }
-    footer{
+
+    .tooggle div{
+        background-color: white;
+        height: 2px;
+        width: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .tooggle {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: absolute;
+        z-index: 1000;
+        right: 0;
+        padding: 2rem;
+    }
+
+    /* premier conteneur */
+    .firstContainer{
+        flex-direction : column;
+        padding-top: 40px;
+    }
+
+    .troisimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .troisimg img{
+        height: 120px;
+    }
+    
+    .left{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap; 
+        text-align: center;
+    }
+
+    .right{
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .right img{
+        height: 65vw;
+    }
+
+    /* deuxième conteneur */
+    .secondContainer{
         flex-direction : column;
     }
+
+    .left2{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap; 
+        text-align: center;
+    }
+
+    .right2{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .right2 img{
+        height: 70vw;
+    }
+
+
+    /* footer */
+    footer{
+        flex-direction : column;
+        text-align: center;
+    }
+
 }
+
+/* faire format ipad */
+/* @media (max-width: 500px 1000px) { */
