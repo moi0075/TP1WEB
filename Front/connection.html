@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./connection.css">
+
+</head>
+<body>
+
+    
+    <div class="background">
+
+        <nav>
+            <button id="pageConnection" class="activebtn">Connection</button>
+            <button id="pageInscription">Inscription</button>
+        </nav>
+
+    
+        <div class="carte">
+          
+            <div id="connectionText" class="active-tab">
+                <div>
+                    <input type="text" id="mail" name="mail" placeholder="Mail" required>    
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Mdp" required>        
+                </div>
+                <button class="myButton" id="connection" type="submit">Se connecter</button>
+            </div>
+
+            <div id="inscriptionText" class="desactive-tab">
+                <div>
+                    <input type="text" id="mail2" name="mail2" placeholder="Mail" required>
+                </div>
+                <div>
+                    <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo" required>        
+                </div>
+                <div>
+                    <input type="password" id="password21" name="password" placeholder="Mdp" required>   
+                </div>
+                <div>
+                    <input type="password" id="password22" name="confirm password" placeholder="Confirm Mdp"  required>             
+                </div>
+                <button class="myButton" id="inscription" type="submit">Se connecter</button>
+            </div>
+            <p id="message"></p>
+        </div>
+
+    </div>        
+
+    <script type="module" src="./connection.js"></script>
+</body>
+</html>
